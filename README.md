@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **Halloween Challenge** is a fun, interactive web application that celebrates the Halloween spirit. I created this for a codecademy Challenge. Users can enjoy a spooky experience with animated bats, a ghost, and a playful pumpkin graphic. The application invites users to engage with the screen by clicking, bringing a festive touch to their Halloween festivities.
+This is a web app I created for a codecademy Challenge. Users can enjoy a spooky experience with animated bats, a ghost, and a playful pumpkin graphic. The application invites users to engage with the screen by clicking, bringing a festive touch to their Halloween festivities.
 
 ## Features
 
