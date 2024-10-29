@@ -14,16 +14,14 @@ The **Halloween Challenge** is a fun, interactive web application that celebrate
 -
 ##1. **Clone the repository**:
 
-      ```bash
          git clone https://github.com/CyberKidLeko/halloween_project.git
 
 ## 2. **Navigate to the project directory**:
 
-      ```bash
          cd halloween_project
 
 ## 3.** Open the index.html file in your web browser to view the application**:
-      ```bash
+
          open index.html  # Use 'start index.html' on Windows
 
 File Structure
