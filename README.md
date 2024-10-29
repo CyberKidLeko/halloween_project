@@ -19,7 +19,7 @@ The **Halloween Challenge** is a fun, interactive web application that celebrate
 
          cd halloween_project
 
-## 3.** Open the index.html file in your web browser to view the application**:
+## 3. **Open the index.html file in your web browser to view the application**:
 
          open index.html  # Use 'start index.html' on Windows
 
