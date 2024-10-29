@@ -1,0 +1,158 @@
+/* Centered Halloween message */
+.halloween-message {
+    text-align: center;
+    color: #ff6600;
+    font-family: 'Creepster', cursive; 
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    z-index: 10;
+}
+
+.halloween-message h1 {
+    font-size: 3em;
+    text-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600, 0 0 30px #ff3300;
+}
+  
+.halloween-message p {
+    font-size: 1.2em;
+    margin-top: -10px;
+    color: #fff;
+    text-shadow: 0 0 10px #ff6600;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d0d0d;
+    overflow: hidden;
+    color: white;
+}
+
+  /*for the 3 parts in picture*/
+.pumpkin-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  /* Each section of the pumpkin */
+.pumpkin-section {
+    width: 70px;
+    height: 120px;
+    background: orange;
+    border-radius: 50% 50% 55% 55%;
+    box-shadow: 0 0 20px 10px orange;
+    animation: flicker 1s infinite alternate;
+}
+
+/*left n right section positions*/
+.pumpkin-section.left {
+    background: #FF8C00;
+    position: absolute;
+    left: -40px;
+    z-index: 1;
+}
+
+.pumpkin-section.right {
+    background: #FF8C00;
+    position: absolute;
+    right: -40px; 
+    z-index: 1;
+}
+
+/* Middle section, top position*/
+.pumpkin-section.middle {
+    z-index: 2;
+    margin-top: -10px; 
+}
+
+  /*stem */
+.stem {
+    position: absolute;
+    top: -32px;
+    width: 20px;
+    height: 27px;
+    left: 25px;
+    background: brown;
+    border-radius: 20% 20% 0 0;
+    z-index: 3;
+}
+
+.pumpkin-eyes {
+    position: absolute;
+    width: 100px; 
+    z-index: 4;  
+    pointer-events: none;
+}
+
+  /* Flicker effect */
+@keyframes flicker {
+    0% { box-shadow: 0 0 20px 10px orange; }
+    100% { box-shadow: 0 0 5px 5px darkorange; }
+}
+
+
+/* Bat*/
+.bat {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    animation: fly 5s linear infinite;
+}
+
+.bat::before, .bat::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+}
+
+/*this is a lot of css isn't it. thanks for making it this far*/
+/*reply with "ready for dia de las muertos?" of you saw this*/
+.bat::before { transform: rotate(45deg); left: -10px; top: -5px; }
+.bat::after { transform: rotate(-45deg); right: -10px; top: -5px; }
+
+/*ghost*/
+.ghost {
+    position: fixed;
+    display: none;
+    animation: ghost-rise 3s ease-in forwards;
+    z-index: 5;
+}
+  
+/* Glowy ghost pic */
+.ghost img {
+    width: 60px; 
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8)); 
+}
+
+@keyframes ghost-rise {
+    0% {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translate(-50%, -300px);
+        opacity: 0; /* Fadeout */
+    }
+}
+  
+
+  /* bst flying*/
+@keyframes fly {
+    0% { transform: translate(-100px, 0) scale(0.8); }
+    50% { transform: translate(100vw, 50vh) scale(1); }
+    100% { transform: translate(200vw, -50vh) scale(0.8); }
+  }
