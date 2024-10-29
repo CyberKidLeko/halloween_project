@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **Halloween Challenge** is a fun, interactive web application that celebrates the Halloween spirit. Users can enjoy a spooky experience with animated bats, a ghost, and a playful pumpkin graphic. The application invites users to engage with the screen by clicking, bringing a festive touch to their Halloween festivities.
+The **Halloween Challenge** is a fun, interactive web application that celebrates the Halloween spirit. I created this for a codecademy Challenge. Users can enjoy a spooky experience with animated bats, a ghost, and a playful pumpkin graphic. The application invites users to engage with the screen by clicking, bringing a festive touch to their Halloween festivities.
 
 ## Features
 
@@ -14,19 +14,17 @@ The **Halloween Challenge** is a fun, interactive web application that celebrate
 -
 ##1. **Clone the repository**:
 
-   ```bash
-   git clone https://github.com/CyberKidLeko/halloween_project.git
+      ```bash
+         git clone https://github.com/CyberKidLeko/halloween_project.git
 
 ## 2. **Navigate to the project directory**:
 
-```bash
-cd halloween_project
+      ```bash
+         cd halloween_project
 
 ## 3.** Open the index.html file in your web browser to view the application**:
-
-
-```bash
-open index.html  # Use 'start index.html' on Windows
+      ```bash
+         open index.html  # Use 'start index.html' on Windows
 
 File Structure
 index.html: The main HTML file containing the structure of the application.
